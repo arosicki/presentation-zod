@@ -1,11 +1,12 @@
-import cx from '$lib/utils/cx';
-import $ from './Stack.module.scss';
+import cx from "$lib/utils/cx";
+import $ from "./Stack.module.scss";
 
 type Props = React.PropsWithChildren<{
   fill?: boolean;
   vertical?: boolean;
   centered?: boolean;
   bg?: boolean;
+  style?: React.CSSProperties;
 }>;
 
 export default function Stack({
@@ -14,6 +15,7 @@ export default function Stack({
   vertical,
   centered,
   bg,
+  style,
 }: Props) {
   return (
     <div
@@ -24,6 +26,7 @@ export default function Stack({
         vertical && $.isVertical,
         bg && $.hasBg
       )}
+      style={style}
     >
       {children}
     </div>

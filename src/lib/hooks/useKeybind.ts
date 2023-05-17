@@ -1,6 +1,6 @@
-import React from 'react';
-import { keyboardEvent } from '$lib/utils/keyboard';
-import useRefValue from './useRefValue';
+import React from "react";
+import { keyboardEvent } from "$lib/utils/keyboard";
+import useRefValue from "./useRefValue";
 
 export default function useKeybind(key: string, cb: () => void) {
   const keyRef = useRefValue(key);

@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Highlight, themes } from 'prism-react-renderer';
-import $ from './CodeBlock.module.scss';
-import cx from '../utils/cx';
+import * as React from "react";
+import { Highlight, themes } from "prism-react-renderer";
+import $ from "./CodeBlock.module.scss";
+import cx from "../utils/cx";
 
 type Props = { code: string; language: string };
 

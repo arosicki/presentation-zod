@@ -6,8 +6,13 @@
   span {
     display: inline-block;
     color: var(--primary);
-    background-color: #f3ec78;
-    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      -170deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(204, 115, 115) 30%,
+      rgba(208, 0, 0, 1) 100%
+    );
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
